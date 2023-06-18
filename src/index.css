@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+} */
+
+.wave-animation {
+  background: url('/wave.svg') repeat-x;
+  animation: wave-animation var(--wave-animation-time) infinite linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
