@@ -3,10 +3,10 @@ business website
 
 ## To Start Project
 
-### "npm install"
-### "npm run dev"
+#### "npm install"
+#### "npm run dev"
 
 ## To Build Project
 
-### "npm install"
-### "npm run build"
+#### "npm install"
+#### "npm run build"
