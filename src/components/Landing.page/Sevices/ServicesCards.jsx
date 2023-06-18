@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoColorPaletteOutline } from 'react-icons/io5'
-import Card from '../KeyFeatures/Card'
+import Card from './Card'
 
 const Services = () => {
 
@@ -12,8 +12,8 @@ const Services = () => {
   ]
 
   return (
-    <div className='w-full h-[90vh] my-8  flex flex-col justify-start items-center'>
-      <div className='gap-3 mb-5 flex justify-center items-center'>
+    <div className='w-full h-[100vh] my-8  flex flex-col justify-start items-center'>
+      <div className='gap-3 mt-16 mb-5 flex justify-center items-center'>
       <span className='w-[1.2rem] h-[1.2rem] rounded-t-lg rounded-bl-lg bg-[#0083FF]'></span>
      <span className='text-[#0083FF] text-base font-medium uppercase'>Services</span>
      </div>

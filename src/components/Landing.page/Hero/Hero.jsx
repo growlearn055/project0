@@ -1,5 +1,5 @@
 import React from 'react'
-import IMG from '../../assets/Website_Builders.png'
+import IMG from '../../../assets/Website_Builders.png'
 const Hero = () => {
   return (
     <div className='w-full h-[90vh]  flex justify-center items-center'>

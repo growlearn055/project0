@@ -3,8 +3,8 @@ import Carousel from './Carousel'
 
 const KeyFeatures = () => {
   return (
-    <div className='w-full h-[90vh] mt-16 flex flex-col justify-start items-center'>
-      <div className='gap-3 mb-5 flex justify-center items-center'>
+    <div className='w-full h-[100vh] mt-16 flex flex-col justify-start items-center'>
+      <div className='gap-3 mt-20 mb-5 flex justify-center items-center'>
       <span className='w-[1.2rem] h-[1.2rem] rounded-t-lg rounded-bl-lg bg-[#0083FF]'></span>
      <span className='text-[#0083FF] text-base font-medium'>FETURES</span>
      </div>

@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Planning from '../../assets/Planning.svg'
-import WebDesign from '../../assets/WebDesign.svg'
-import DefineContent from '../../assets/DefineContent.svg'
-import RequirementGathering from '../../assets/RequirementGathering.svg'
-import UIUX from '../../assets/UIUX.svg'
-import Prototype from '../../assets/Prototype.svg'
-import Development from '../../assets/Development.svg'
-import QualityAssurance from '../../assets/QualityAssurance.svg'
-import Deployment from '../../assets/Deployment.svg'
-import SupportMaintenance from '../../assets/SupportMaintenance.svg'
+import Planning from '../../../assets/Planning.svg'
+import WebDesign from '../../../assets/WebDesign.svg'
+import DefineContent from '../../../assets/DefineContent.svg'
+import RequirementGathering from '../../../assets/RequirementGathering.svg'
+import UIUX from '../../../assets/UIUX.svg'
+import Prototype from '../../../assets/Prototype.svg'
+import Development from '../../../assets/Development.svg'
+import QualityAssurance from '../../../assets/QualityAssurance.svg'
+import Deployment from '../../../assets/Deployment.svg'
+import SupportMaintenance from '../../../assets/SupportMaintenance.svg'
 
 
 const Processes = () => {
@@ -21,9 +21,9 @@ const Processes = () => {
      </div>
 
       <div className=''>
-      <h1 className='text-3xl mb-16 w-full flex justify-center items-center font-bold'>Process <span className='font-medium'>We Follow</span></h1>
+      <h1 className='text-3xl w-full flex justify-center items-center font-bold'>Process <span className='font-medium'>We Follow</span></h1>
         {/* <h2 className='text-5xl font-bold text-gray-800 w-fit mx-auto'> Process We Follow </h2> */}
-        <h3 className='text-lg mt-5 w-fit mx-auto'>How Our Experts Handle The Project Efficiently,</h3>
+        <h3 className='text-lg mt-3 w-fit mx-auto'>How Our Experts Handle The Project Efficiently,</h3>
     </div>
     <div className='flex justify-center items-start gap-10 mt-16'>
  

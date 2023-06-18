@@ -12,7 +12,7 @@ import "./styles.css";
 
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper";
-import Card from "./Card";
+
 
 console.log(Swiper.width)
 const Carousel = () => {
