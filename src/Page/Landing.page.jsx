@@ -5,6 +5,7 @@ import KeyFeatures from '../components/Landing.page/KeyFeatures/KeyFeatures'
 import Services from '../components/Landing.page/Sevices/ServicesCards'
 import Processes from '../components/Landing.page/Processes/Processes'
 import About from '../components/Landing.page/About/About'
+import Contact from '../components/Landing.page/Contact/Contact'
 
 
 const Landing= () => {
@@ -15,6 +16,7 @@ const Landing= () => {
       <Services/>
       <Processes/>
       <About/>
+      <Contact/>
     </div>
   )
 }
