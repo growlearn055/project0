@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="w-4/5 mx-auto  h-full py-8">
       <h2 className="text-3xl font-bold mb-6">Our Services</h2>
       <div className="grid gap-8">
         {services.map((service, index) => (

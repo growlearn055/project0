@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {FaRegLightbulb} from 'react-icons/fa'
 import {FiPhoneCall} from 'react-icons/fi'
 import { IoMailOutline, IoWalletOutline } from 'react-icons/io5'
 import { TfiHeadphoneAlt } from 'react-icons/tfi'
+import axios from 'axios';
 
 const Contact = () => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('localhost:3000/sendEmail', { email, message });
+      alert('Email sent successfully');
+    } catch (error) {
+      console.error(error);
+      alert('Error sending email');
+    }
+  };
+
   return (
     <div className='w-full h-[100vh] my-8 mb-20  flex flex-col justify-start items-start'>
       <div className='gap-3 mt-16 mb-5 flex justify-center items-center'>
@@ -38,18 +53,18 @@ const Contact = () => {
         
         <div className='bg-white w-[30rem] h-[35rem] ml-10 shadow-2xl shadow-gray-300 rounded-3xl flex flex-col justify-start items-start gap-10 p-10 '>
         <h1 className='text-3xl  w-full font-semibold mt-5 tracking-wider text-[#1e4264] text-left align-middle'>Get in <span className='font-bold'>Touch</span></h1>
-        
+        <form onSubmit={handleSubmit}>
         <div className='flex flex-col justify-center items-start mx-auto'>
             <span className='text-base font-medium text-[#1e4264]'>Your Mail</span>
-            <input type='email' placeholder='Enter Your Mail' className='outline-none mt-2 bg-gray-100 w-96 h-12 text-gray-500 p-4 rounded-lg'/>
+            <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Enter Your Mail' className='outline-none mt-2 bg-gray-100 w-96 h-12 text-gray-500 p-4 rounded-lg'/>
         </div>
 
         <div className='flex flex-col justify-center items-start mx-auto'>
             <span className='text-base font-medium text-[#1e4264]'>Message</span>
-            <textarea  placeholder='Enter Your Message' className='outline-none mt-2 bg-gray-100 w-96 h-28 text-gray-500 p-4 rounded-lg'/>
+            <textarea  placeholder='Enter Your Message' value={message} onChange={(e) => setMessage(e.target.value)} required className='outline-none mt-2 bg-gray-100 w-96 h-28 text-gray-500 p-4 rounded-lg'/>
         </div>
-
-        <button className='mt-2 rounded-2xl w-96 h-14 bg-[#0083ff] text-white font-semibold'>Send Request</button>
+        <button type='submit'  className='mt-2 rounded-2xl w-96 h-14 bg-[#0083ff] text-white font-semibold'>Send Request</button>
+        </form>
 
         </div>
         

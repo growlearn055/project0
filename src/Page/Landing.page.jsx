@@ -10,7 +10,7 @@ import Contact from '../components/Landing.page/Contact/Contact'
 
 const Landing= () => {
   return (
-    <div>
+    <div className='w-4/5 mx-auto  h-full'>
       <Hero/>
       <KeyFeatures/>
       <Services/>
