@@ -12,6 +12,7 @@ import {GiMultipleTargets} from 'react-icons/gi'
 const ServicesDetails = () => {
   return (
     <div className='w-4/5 mx-auto  h-full'>
+        
         <div className='mt-10 w-full flex flex-col justify-center items-start gap-5 h-72 rounded-3xl '
         // style={{ backgroundImage: `url(${Img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >

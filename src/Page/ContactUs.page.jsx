@@ -5,7 +5,7 @@ import { FaUpload } from 'react-icons/fa'
 const ContactUs = () => {
   return (
     <>
-    <div className='w-full h-64 bg-[#0083FF] absolute top-16 right-0 -z-10 '></div>
+    <div className='w-full h-64 bg-[#0083FF]  absolute top-16 right-0 -z-10 '></div>
     <div className='w-4/5 mx-auto  h-full py-5'>
         <div className='flex justify-start items-start'>
         <div className='w-1/2 h-64 mt-3'>
